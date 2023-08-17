@@ -36,5 +36,9 @@ export class ShoppingCartService {
     return this.cartItem.reduce((acc, { price }) => (acc += price), 0);
   }
 
-  constructor() { }
+  addItem(item: CartItem) : void{
+    this.cartItem = [...this.cartItem, item];
+   }
+
+  //constructor() { }
 }

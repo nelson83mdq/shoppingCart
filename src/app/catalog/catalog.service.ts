@@ -5,7 +5,7 @@ import { Product } from './product';
   providedIn: 'root'
 })
 export class CatalogService {
-  readonly product: Product[] = [
+  readonly products: Product[] = [
     {
       imageUrl:'headphones.jpg',
       name: 'HeadPhones',

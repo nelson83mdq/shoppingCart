@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   get itemsCount(): number {
     return this.scService.itemsCount;
   }
+  
   ngOnInit(): void {}
 
   onCartClicked(): void {
