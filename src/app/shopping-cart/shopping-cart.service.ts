@@ -24,6 +24,10 @@ export class ShoppingCartService {
     }
 ];
 
+  get itemsCount() : number{
+    return this.cartItem.length;
+  }
+
   deleteItem(item: CartItem): void{
     this.cartItem = this.cartItem.filter((_item)=> _item !==item);
   }
