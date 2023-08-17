@@ -1,0 +1,9 @@
+<p class="Title">Mi Carrito</p>
+<app-shopping-cart-item 
+    *ngFor="let item of cartItem" 
+    [cart_item]="item"
+    (cartItemDelete)="deleteItem(item)"
+></app-shopping-cart-item>
+
+<p class="total"><span class="total-label">Total:</span>${{getTotal()}}</p>
+<button>Finalizar Pedido</button>

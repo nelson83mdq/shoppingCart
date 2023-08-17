@@ -1,0 +1,8 @@
+<img src="/assets/item/{{cart_item.imageUrl}}" alt="auriculares" class="thumbnail">
+<div class="info">
+    <span>{{cart_item.name}}</span>
+    <span class="info-price">${{cart_item.price}}</span>
+</div>
+<button (click)="onDeleteClicked()">
+    <img src="/assets/close.svg" alt="eliminar">
+</button>
