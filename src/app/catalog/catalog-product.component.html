@@ -1,1 +1,12 @@
-<p>catalog-product works!</p>
+<div class="img-container">
+    <img src="/assets/item/{{product.imageUrl}}" alt="{{product.name}}"/>
+</div>
+<div class="info">
+    <span>
+        <strong>{{product.name}}</strong>
+    </span>
+        <span>{{product.price}} &euro;</span>
+</div>
+<button (click)=" addToCart()"  title="Añadir al carrito">
+    <img src="/assets/add_white.svg" alt="'+" />
+</button>

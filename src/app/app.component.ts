@@ -9,6 +9,6 @@ export class AppComponent {
   isCartVisible = false;
 
   toggleCartVisibility(): void{
-    this.isCartVisible != this.isCartVisible;
+    this.isCartVisible = !this.isCartVisible;
   }
 }
