@@ -8,6 +8,8 @@ import { Product } from './product';
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent {
+
+
   get products() : Product[] {
     return this.catalogService.products;
   }

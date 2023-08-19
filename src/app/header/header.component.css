@@ -34,9 +34,24 @@
   
   .cart span {
     position: absolute;
-    top: 0;
-    right: -10;
+    top: -5px;
+    right: 1px;
     font-size: 14px;
     color: #fff;
     font-weight: 600;
+  }
+
+  button {
+    display: grid;
+    place-items: center;
+    background: none;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #7d29fa;
   }

@@ -1,4 +1,9 @@
-<span class="logo">Mi Tienda</span>
+
+<button (click)="onMenuClicked()">
+  <img src="/assets/menu_white.svg" alt="abrir menú"/> 
+  <!--el boton abrir menu-->
+</button>
+<a class="logo" routerlink="/myShop">Mi Tienda</a>
 <button class="cart" (click)="onCartClicked()">
   <img src="/assets/shopping_cart.svg" alt="Open Cart" />
   <span>{{ itemsCount }}</span>
