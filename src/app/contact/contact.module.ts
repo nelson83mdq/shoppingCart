@@ -8,6 +8,9 @@ import { ContactComponent } from './contact.component';
   declarations: [
     ContactComponent
   ],
+  exports: [
+    ContactModule
+  ],
   imports: [
     CommonModule
   ]

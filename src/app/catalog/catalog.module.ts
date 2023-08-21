@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CatalogComponent } from './catalog.component';
 import { CatalogProductComponent } from './catalog-product.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [CatalogComponent, CatalogProductComponent],
+  declarations: [CatalogComponent, CatalogProductComponent, ProductDetailsComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [CatalogComponent] //sin esto la app no reconoce el selector app-catalog
 })

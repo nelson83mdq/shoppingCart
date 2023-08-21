@@ -9,19 +9,20 @@ import { NavDrawerComponent } from './nav-drawer/nav-drawer.component';
 import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule} from '@angular/router';
 import { CatalogComponent } from './catalog/catalog.component';
+import { ProductDetailsComponent } from './catalog/product-details/product-details.component';
 
 const routes: Routes = [
   {
     path: "catalog",
     component: CatalogComponent
   },
+  { 
+    path: 'catalog/:id',
+    component: ProductDetailsComponent
+  },
   {
     path: "contact",
     component: ContactComponent
-  },
-  {
-    path: 'catalog/:id',
-    component: CatalogComponent
   }
 ]
 

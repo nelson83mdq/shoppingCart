@@ -1,0 +1,22 @@
+<a routerLink="/catalog" class="back">&lt; Volver al catalogo</a>
+<div class="container">
+    
+        <div class="img-container">
+            <img src="/assets/item/{{product?.imageUrl}}"
+            alt="{{product?.name}}"
+            />
+        </div>
+        <div class="info">
+            <p class="product-name">{{product?.name}}</p>
+            <p class="product-short-description">Descripcion del producto.</p>
+            <div class="cart-row">
+                <span class="price">
+                    {{product?.price | number: "1.2-2"}}<small>&euro;</small>
+                </span>
+                <button (click)="addToCart(product)" title="añadir al carrito">
+                    <img src="/assets/add_white.svg" alt="+" />añadir al carrito
+                </button>
+            </div>
+        </div>
+    
+</div>
