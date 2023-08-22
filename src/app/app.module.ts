@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule} from '@angular/router';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ProductDetailsComponent } from './catalog/product-details/product-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "contact",
     component: ContactComponent
+  },
+  {
+    path: "**",
+    component: PageNotFoundComponent
   }
 ]
 
@@ -32,7 +37,8 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     NavDrawerComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

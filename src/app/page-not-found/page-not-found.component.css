@@ -1,0 +1,30 @@
+/*:host {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 28px;
+  }
+.error-404{
+    font-size: xx-large;
+}
+.content {
+    font-size: medium;
+}*/
+
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 64px;
+  }
+  .error-404 {
+    font-weight: 600;
+    font-size: 5rem;
+  }
+
+  a {
+    margin-top: 32px;
+    color: #5e00ea;
+  }

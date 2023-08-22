@@ -10,7 +10,7 @@ export class CatalogService {
       id: 1,
       imageUrl:'headphones.jpg',
       name: 'HeadPhones',
-      price: 50.05,
+      price: 150.05,
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export class CatalogService {
       id: 3,
       imageUrl:'monitor.jpg',
       name: 'Monitor',
-      price: 80.45,
+      price: 800.45,
     }
   ];
   constructor() { }
